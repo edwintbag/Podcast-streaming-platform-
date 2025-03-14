@@ -1,0 +1,20 @@
+       :root {
+            --bg-light: #ffffff;
+            --text-light: #000000;
+            --bg-dark: #121212;
+            --text-dark: #ffffff;
+        }
+
+        body.light-mode {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        body.dark-mode {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        .dark-mode .navbar {
+            background-color: #222 !important;
+        }
