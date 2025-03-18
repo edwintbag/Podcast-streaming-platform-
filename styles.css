@@ -5,16 +5,38 @@
             --text-dark: #ffffff;
         }
 
-        body.light-mode {
-            background-color: var(--bg-light);
-            color: var(--text-light);
-        }
+        /* Dark Mode Styles */
+.dark-mode .navbar {
+    background-color: #222 !important;
+    color: white;
+}
 
-        body.dark-mode {
-            background-color: var(--bg-dark);
-            color: var(--text-dark);
-        }
+.dark-mode .btn-outline-dark {
+    border-color: white;
+    color: white;
+}
 
-        .dark-mode .navbar {
-            background-color: #222 !important;
-        }
+.dark-mode .btn-outline-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Hover Effect */
+.hover-grow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
+}
